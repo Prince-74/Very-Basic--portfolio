@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Goyal - Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFDB00;
+            transition: background-color 0.5s ease-in-out;
+        }
+        header {
+            background-color: #26355D;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #AF47D2;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.7s forwards;
+        }
+        footer {
+            background-color:#FF8F00;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Prince Goyal</h1>
+    <p>B.Tech 2nd Year Student of CSE AIML</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Prince Goyal, currently a B.Tech 2nd year student of Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning. I have a strong foundation in Python, frontend and backend development, and Java. I aspire to become a software engineer.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <h3>Simon Says Game</h3>
+    <p>I have created a Simon Says game using HTML, CSS, and JavaScript. The game starts when any key is pressed, Simon flashes white colors, and when the user presses, the button shows green. If the user makes a mistake, the screen flashes red. To restart the game, the user presses any key again.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>Frontend Development (HTML, CSS, JavaScript)</li>
+        <li>Backend Development</li>
+        <li>Java</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me via LinkedIn or check out my GitHub profile for more of my projects.</p>
+    <p><a href="https://www.linkedin.com/in/prince-goyal-130631266/" target="_blank">LinkedIn</a></p>
+    <p><a href="https://github.com/Prince-74" target="_blank">GitHub</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Prince Goyal</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+        const options = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.7s forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
