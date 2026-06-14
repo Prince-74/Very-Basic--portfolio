@@ -1,0 +1,14 @@
+.layer {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  filter: blur(0.2px) saturate(118%);
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+.layer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
