@@ -1,0 +1,179 @@
+.hero {
+  position: sticky;
+  top: 0;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+  background: #030303;
+}
+.videoWrap, .ambientVideo, .heroVideo, .gradientBase, .gradientReadability {
+  position: absolute;
+  inset: 0;
+}
+.videoWrap {
+  z-index: 1;
+  opacity: 0;
+  transform: translateZ(0);
+}
+.ambientVideo, .heroVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ambientVideo {
+  transform: scale(1.16);
+  filter: blur(42px) saturate(145%) brightness(0.7);
+  opacity: 0.76;
+}
+.heroVideo {
+  left: 50%;
+  width: min(78vw, 980px);
+  transform: translateX(-36%);
+  object-position: center;
+  filter: contrast(1.05) saturate(1.08);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 88%, transparent 100%);
+}
+.gradientBase {
+  z-index: 2;
+  background:
+    radial-gradient(circle at 72% 42%, rgba(50, 105, 145, 0.22), transparent 31%),
+    radial-gradient(circle at 28% 34%, rgba(255, 115, 36, 0.2), transparent 34%),
+    linear-gradient(90deg, rgba(3,3,3,0.94) 0%, rgba(3,3,3,0.56) 37%, rgba(3,3,3,0.16) 63%, rgba(3,3,3,0.72) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.72) 0%, transparent 35%, rgba(0,0,0,0.92) 100%);
+}
+.gradientReadability {
+  z-index: 3;
+  background: linear-gradient(180deg, transparent 48%, rgba(0,0,0,0.88) 100%);
+}
+.content {
+  position: relative;
+  z-index: 5;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: clamp(6rem, 9vw, 9rem) 0;
+  pointer-events: none;
+}
+.eyebrow {
+  max-width: 620px;
+  margin: 0 0 1.4rem;
+  color: #ffab69;
+  font-size: clamp(0.72rem, 1vw, 0.86rem);
+  font-weight: 900;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  text-shadow: 0 0 28px rgba(255, 127, 58, 0.38);
+}
+.title {
+  margin: 0;
+  font-size: clamp(4.6rem, 14vw, 13.5rem);
+  font-weight: 950;
+  line-height: 0.76;
+  letter-spacing: -0.09em;
+  text-transform: uppercase;
+}
+.nameLine {
+  display: block;
+  width: fit-content;
+  background: linear-gradient(105deg, #fff9ef 0%, #ffc48f 42%, #fff2e3 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 28px 90px rgba(0,0,0,0.72);
+}
+.subtitle {
+  max-width: 650px;
+  margin: 2rem 0 0;
+  color: rgba(250, 239, 225, 0.78);
+  font-size: clamp(1rem, 1.8vw, 1.38rem);
+  line-height: 1.65;
+}
+.controls {
+  position: absolute;
+  right: clamp(1rem, 4vw, 3rem);
+  bottom: clamp(1rem, 4vw, 3rem);
+  z-index: 6;
+  display: flex;
+  gap: 0.8rem;
+}
+.controlButton, .soundHint, .scrollCue {
+  border: 1px solid rgba(255,255,255,0.16);
+  color: #fff7ec;
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.32), inset 0 1px 0 rgba(255,255,255,0.18);
+  backdrop-filter: blur(18px) saturate(160%);
+  cursor: pointer;
+  transition: transform 240ms ease, border-color 240ms ease, background 240ms ease;
+}
+.controlButton:hover, .soundHint:hover, .scrollCue:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 169, 95, 0.56);
+  background: rgba(255, 137, 61, 0.14);
+}
+.controlButton {
+  border-radius: 999px;
+  padding: 0.82rem 1.05rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.soundHint {
+  position: absolute;
+  top: clamp(1rem, 4vw, 2.5rem);
+  right: clamp(1rem, 4vw, 3rem);
+  z-index: 6;
+  border-radius: 999px;
+  padding: 0.72rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  animation: breathe 1.9s ease-in-out infinite;
+}
+.scrollCue {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(1.2rem, 4vw, 3rem);
+  z-index: 6;
+  display: grid;
+  justify-items: center;
+  gap: 0.52rem;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+.scrollCue span {
+  width: 1px;
+  height: 54px;
+  background: linear-gradient(180deg, transparent, #ff9a4f, transparent);
+  animation: pulseLine 1.8s ease-in-out infinite;
+}
+.scrollCue small {
+  color: rgba(255,255,255,0.58);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+@keyframes pulseLine {
+  0%, 100% { transform: scaleY(0.44); opacity: 0.35; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes breathe {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.72; }
+  50% { transform: translateY(-4px) scale(1.03); opacity: 1; }
+}
+@media (max-width: 760px) {
+  .heroVideo { width: 120vw; transform: translateX(-50%); opacity: 0.72; }
+  .content { justify-content: end; padding-bottom: 9rem; }
+  .title { font-size: clamp(4rem, 23vw, 7rem); }
+  .controls { left: 1rem; right: 1rem; justify-content: center; }
+  .scrollCue { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scrollCue span, .soundHint { animation: none; }
+  .controlButton, .soundHint, .scrollCue { transition: none; }
+}
