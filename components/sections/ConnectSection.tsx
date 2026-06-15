@@ -6,7 +6,6 @@ const links = [
   { label: 'Gmail', href: `mailto:${profile.email}`, external: false },
   { label: 'LinkedIn', href: profile.linkedin, external: true },
   { label: 'GitHub', href: profile.github, external: true },
-  { label: 'Portfolio', href: profile.portfolio, external: true },
 ] as const;
 
 export default function ConnectSection() {
