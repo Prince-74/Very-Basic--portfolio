@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  background: linear-gradient(145deg, rgba(139, 92, 246, 0.14), rgba(255, 157, 85, 0.08));
+  color: #fff9ef;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  transition: transform 240ms ease, border-color 240ms ease;
+}
+
+.badge:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 157, 85, 0.45);
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.arrow {
+  color: #ff9d55;
+  font-size: 1.2rem;
+}

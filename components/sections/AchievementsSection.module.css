@@ -1,0 +1,8 @@
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.centered > div {
+  width: min(900px, 100%);
+}

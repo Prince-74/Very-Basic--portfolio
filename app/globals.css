@@ -3,6 +3,9 @@
   background: #030303;
   --text: #f8efe3;
   --muted: rgba(248, 239, 227, 0.68);
+  --accent: #ff9d55;
+  --violet: #8b5cf6;
+  --violet-soft: #c4b5fd;
 }
 
 * { box-sizing: border-box; }

@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff9ef;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 240ms ease, border-color 240ms ease, background 240ms ease;
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 157, 85, 0.5);
+  background: rgba(255, 137, 61, 0.1);
+}
+
+.link span:last-child {
+  color: #ff9d55;
+}

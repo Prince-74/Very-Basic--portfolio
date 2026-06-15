@@ -55,11 +55,98 @@
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
   padding: clamp(6rem, 9vw, 9rem) 0;
-  pointer-events: none;
+}
+.openBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  border-radius: 999px;
+  background: rgba(74, 222, 128, 0.1);
+  color: #86efac;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.openDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.8);
+}
+.role {
+  margin: 1rem 0 0;
+  color: #ffab69;
+  font-size: clamp(0.82rem, 1.4vw, 1rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.heroTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.25rem;
+}
+.heroTag {
+  padding: 0.42rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.45rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(248, 239, 227, 0.82);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+.primaryCta,
+.secondaryCta {
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 240ms ease, border-color 240ms ease, background 240ms ease;
+}
+.primaryCta {
+  padding: 0.95rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff9ef;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.primaryCta:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+.secondaryCta {
+  color: #ffab69;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.secondaryCta:hover {
+  color: #ffc48f;
 }
 .eyebrow {
   max-width: 620px;
-  margin: 0 0 1.4rem;
+  margin: 0 0 0.8rem;
+  pointer-events: none;
   color: #ffab69;
   font-size: clamp(0.72rem, 1vw, 0.86rem);
   font-weight: 900;
@@ -69,6 +156,7 @@
 }
 .title {
   margin: 0;
+  pointer-events: none;
   font-size: clamp(4.6rem, 14vw, 13.5rem);
   font-weight: 950;
   line-height: 0.76;
@@ -86,7 +174,8 @@
 }
 .subtitle {
   max-width: 650px;
-  margin: 2rem 0 0;
+  margin: 1.5rem 0 0;
+  pointer-events: none;
   color: rgba(250, 239, 225, 0.78);
   font-size: clamp(1rem, 1.8vw, 1.38rem);
   line-height: 1.65;

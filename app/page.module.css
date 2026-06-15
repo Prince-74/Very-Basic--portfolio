@@ -1,30 +1,20 @@
-.storySection {
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  gap: 1.2rem;
-  padding: clamp(3rem, 9vw, 8rem);
-  background: linear-gradient(180deg, #050505 0%, #100904 52%, #020202 100%);
+.main {
+  overflow-x: hidden;
 }
-.eyebrow {
-  margin: 0;
-  color: #ff9d55;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
+
+.sections {
+  position: relative;
+  z-index: 2;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(139, 92, 246, 0.08), transparent 28%),
+    radial-gradient(circle at 85% 20%, rgba(255, 157, 85, 0.06), transparent 24%),
+    linear-gradient(180deg, #050505 0%, #0a0812 40%, #020202 100%);
 }
-.storySection h2 {
-  max-width: 980px;
-  margin: 0;
-  font-size: clamp(2.4rem, 7vw, 6.5rem);
-  line-height: 0.94;
-  letter-spacing: -0.075em;
-}
-.storySection p:last-child {
-  max-width: 720px;
-  margin: 0;
-  color: rgba(248, 239, 227, 0.72);
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  line-height: 1.7;
+
+.sections::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, transparent 12%);
+  pointer-events: none;
 }

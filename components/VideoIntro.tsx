@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import { profile } from '@/data/portfolio';
 import CinematicLayer from './CinematicLayer';
 import styles from './VideoIntro.module.css';
 
@@ -54,7 +55,7 @@ export default function VideoIntro({ videoSrc }: VideoIntroProps) {
     }
   };
 
-  const scrollToStory = () => document.querySelector('#story')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (id: string) => document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
     <section ref={rootRef} className={styles.hero} aria-label="Cinematic portfolio introduction">
@@ -67,14 +68,34 @@ export default function VideoIntro({ videoSrc }: VideoIntroProps) {
       <CinematicLayer />
 
       <div className={styles.content}>
-        <p className={styles.eyebrow}>AI storyteller · frontend engineer · cinematic builder</p>
+        {profile.openToWork && (
+          <span className={styles.openBadge}>
+            <span className={styles.openDot} aria-hidden="true" />
+            Open to work
+          </span>
+        )}
+        <p className={styles.eyebrow}>{profile.eyebrow}</p>
         <h1 className={styles.title}>
-          <span className={styles.nameLine}>Prince</span>
-          <span className={styles.nameLine}>Goyal</span>
+          <span className={styles.nameLine}>{profile.firstName}</span>
+          <span className={styles.nameLine}>{profile.lastName}</span>
         </h1>
-        <p className={styles.subtitle}>
-          Crafting immersive interfaces where artificial intelligence, modern React engineering, and emotional product storytelling converge.
-        </p>
+        <p className={styles.role}>{profile.title}</p>
+        <div className={styles.heroTags}>
+          {profile.heroTags.map((tag) => (
+            <span key={tag} className={styles.heroTag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+        <p className={styles.subtitle}>{profile.tagline}</p>
+        <div className={styles.ctaRow}>
+          <button type="button" onClick={() => scrollToSection('#projects')} className={styles.primaryCta}>
+            View Projects
+          </button>
+          <a href={profile.github} target="_blank" rel="noreferrer noopener" className={styles.secondaryCta}>
+            GitHub ↗
+          </a>
+        </div>
       </div>
 
       <div className={styles.controls} aria-label="Video controls">
@@ -88,7 +109,7 @@ export default function VideoIntro({ videoSrc }: VideoIntroProps) {
 
       {showSoundHint && <button type="button" onClick={toggleMute} className={styles.soundHint}>Tap for sound</button>}
 
-      <button type="button" onClick={scrollToStory} className={styles.scrollCue} aria-label="Scroll to next section">
+      <button type="button" onClick={() => scrollToSection('#about')} className={styles.scrollCue} aria-label="Scroll to next section">
         <span />
         <small>Scroll</small>
       </button>

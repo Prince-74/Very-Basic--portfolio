@@ -1,0 +1,59 @@
+.list {
+  display: grid;
+  gap: 1rem;
+}
+
+.project {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 1.35rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.projectName {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #fff9ef;
+}
+
+.chevron {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-right: 2px solid #ff9d55;
+  border-bottom: 2px solid #ff9d55;
+  transform: rotate(45deg);
+  transition: transform 240ms ease;
+}
+
+.project[open] .chevron {
+  transform: rotate(-135deg);
+}
+
+.body {
+  padding: 0 1.35rem 1.35rem;
+}
+
+.link {
+  color: #c4b5fd;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link:hover {
+  color: #ff9d55;
+}

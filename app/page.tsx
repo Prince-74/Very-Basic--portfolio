@@ -1,17 +1,34 @@
 import VideoIntro from '@/components/VideoIntro';
+import AboutSection from '@/components/sections/AboutSection';
+import TechStackSection from '@/components/sections/TechStackSection';
+import AIMLSection from '@/components/sections/AIMLSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import ExperienceSection from '@/components/sections/ExperienceSection';
+import AchievementsSection from '@/components/sections/AchievementsSection';
+import CertificationsSection from '@/components/sections/CertificationsSection';
+import CodingProfilesSection from '@/components/sections/CodingProfilesSection';
+import CurrentFocusSection from '@/components/sections/CurrentFocusSection';
+import ConnectSection from '@/components/sections/ConnectSection';
+import FooterSection from '@/components/sections/FooterSection';
 import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <VideoIntro videoSrc="/talking-head.mp4" />
-      <section id="story" className={styles.storySection} aria-label="Portfolio overview">
-        <p className={styles.eyebrow}>Beyond the intro</p>
-        <h2>Building human-centered AI products with cinematic care.</h2>
-        <p>
-          I craft interfaces where engineering discipline meets emotional storytelling — from intelligent systems to polished frontend experiences.
-        </p>
-      </section>
+      <div className={styles.sections}>
+        <AboutSection />
+        <TechStackSection />
+        <AIMLSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <AchievementsSection />
+        <CertificationsSection />
+        <CodingProfilesSection />
+        <CurrentFocusSection />
+        <ConnectSection />
+        <FooterSection />
+      </div>
     </main>
   );
 }

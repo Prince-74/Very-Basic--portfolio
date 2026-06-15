@@ -1,0 +1,88 @@
+Prince Goyal
+Software Developer
++91 8865037375 | princegoyal8865@gmail.com | LinkedIn | GitHub | Noida, Uttar Pradesh, India
+Professional Summary
+B.Tech (AI/ML) graduate and Software Developer with hands-on experience building and shipping production-grade full-stack
+applications using JavaScript, Node.js, React.js, REST APIs, and MongoDB. Designed RESTful API endpoints,
+integrated AI/ML pipelines, and deployed 2 production applications with live users. Participated in 15+ national and
+inter-college hackathons, consistently delivering functional solutions under time constraints.
+Education
+Meerut Institute of Engineering and Technology
+Bachelor of Technology– Computer Science Engineering (AI/ML)
+Technical Skills
+2022– 2026
+Languages: JavaScript (ES6+), Python, Java, SQL
+Concepts: Data Structures, Algorithms, Object-Oriented Programming (OOP), REST API Design, System Design
+Front-End: HTML, CSS, React.js, Responsive Design
+Back-End: Node.js, Express.js, JWT Authentication, Middleware
+Databases: MongoDB, MySQL, PostgreSQL
+AI/ML: Machine Learning, OCR, Large Language Models (LLMs), Gemini API, LiveKit Agents
+Cloud & DevOps: Google Cloud Platform (GCP), Oracle Cloud Infrastructure (OCI), Docker, CI/CD Pipelines, Git, GitHub,
+Postman
+Projects
+AI-MED (Sehat Saathi) | React.js, Node.js, Express.js, MongoDB, OCR, Machine Learning
+2025– 2026– Architected a full-stack telemedicine web application with 2 distinct user roles (patient, doctor), supporting online
+consultations, digital records, and secure prescription access.– Designed and built 15+ RESTful API endpoints using Node.js and Express.js with MongoDB for structured patient
+record storage; implemented JWT-based authentication and role-based access control.– Integrated an automated OCR pipeline to extract and parse data from medical reports, reducing manual processing by 60%+
+and cutting report turnaround time by 40%.– Iteratively improved the platform based on user feedback and was selected among top projects to present at the India AI
+Impact Summit 2026, attended by 5000+ AI professionals nationwide.– Live Demo | Source Code
+Voice AI Agents Platform | Python, Node.js, Express.js, LiveKit Agents, Gemini LLMs
+2024– 2025– Built 10+ real-time voice AI applications across 5+ use-case scenarios by integrating Gemini LLMs and LiveKit Agents
+with a Node.js and Express.js backend.– Engineered a 3-layer modular Node.js backend architecture with REST APIs managing speech pipelines, session state,
+input validation, and LLM response generation achieving sub-2s response latency.– Accelerated per-agent development time by 70% by designing reusable Express.js middleware modules and shared configuration
+files, enabling rapid cross-scenario deployment.– Video Demo | Source Code
+Achievements & Certifications
+• India AI Impact Summit 2026: Selected to exhibit AI-MED among top national projects, presenting to 500+ AI
+professionals and receiving recognition in applied AI and health-tech innovation.
+• Hackathons: Collaborated in cross-functional teams across 15+ national and inter-college hackathons over 3+ years,
+shipping functional solutions within 24–48 hour sprints.
+• Google Cloud Champion (2x): Completed 30+ skill badges to achieve 2x Champion status through Google Arcade,
+demonstrating continuous self-directed learning.
+• Oracle Cloud Infrastructure (OCI) Generative AI Professional Certification– View Certificate
+• Full Stack Web Development Virtual Internship Certificate– View Certificate
+• MongoDB Basics Certification– MongoDB University.
+Prince Goyal
+AI/ML Engineer
++91 8865037375 | princegoyal8865@gmail.com | LinkedIn | GitHub | Noida, Uttar Pradesh, India
+Professional Summary
+B.Tech (AI/ML) graduate and AI/ML Engineer with hands-on experience designing and deploying intelligent systems integrating
+Large Language Models, OCR pipelines, and real-time voice AI. Built and shipped 2 production AI-powered
+applications with measurable impact. Participated in 15+ national and inter-college hackathons, consistently delivering
+AI-powered solutions under time constraints.
+Education
+Meerut Institute of Engineering and Technology
+Bachelor of Technology– Computer Science Engineering (AI/ML)
+Technical Skills
+2022– 2026
+Languages: Python, JavaScript, Java, SQL
+AI/ML: Machine Learning, Deep Learning, Large Language Models (LLMs), Generative AI, Prompt Engineering, OCR, Gemini
+API, LiveKit Agents, RAG, Langchain
+Front-End: HTML, CSS, React.js
+Back-End: Node.js, Express.js
+Databases: MongoDB, MySQL, PostgreSQL
+Cloud & DevOps: Google Cloud Platform (GCP), Docker, CI/CD Pipelines, Git, GitHub
+Projects
+AI-MED (Sehat Saathi) | React.js, Node.js, MongoDB, OCR, Machine Learning, Generative AI
+2025– 2026– Designed and deployed an ML-integrated telemedicine platform with 2 distinct user roles (patient, doctor), embedding
+AI workflows for automated medical record processing and clinical decision support.– Built an end-to-end OCR pipeline using machine learning models to automatically extract, parse, and structure data from
+medical reports and lab documents, replacing manual data entry across 15+ API endpoints.– Optimized AI-driven back-end workflows to reduce manual medical report processing by 60%+ and cut model
+inference-to-output turnaround time by 40%, enabling faster clinical decision-making.– Applied iterative model improvement based on real user feedback; selected among top national AI projects to present at the
+India AI Impact Summit 2026, attended by 500+ AI professionals.– Live Demo | Source Code
+Voice AI Agents Platform | Python, LiveKit Agents, Gemini LLMs, RAG, Vector Databases
+2024– 2025– Engineered 10+ production-grade real-time voice AI agents across 5+ use-case scenarios by integrating Gemini
+LLMs with LiveKit for low-latency speech-to-response AI pipelines.– Implemented RAG (Retrieval-Augmented Generation) with vector database storage to enable contextual long-term
+knowledge retrieval, significantly improving agent response accuracy across sessions.– Designed and optimized prompt engineering strategies to control LLM output quality, tone, and task accuracy across diverse
+agent configurations and conversation flows.– Architected a 3-layer modular AI backend with REST APIs managing speech pipelines, session state, and LLM response
+generation achieving sub-2s end-to-end inference latency; reduced per-agent build time by 70%.– Video Demo | Source Code
+Achievements & Certifications
+• India AI Impact Summit 2026: Selected to exhibit AI-MED among top national AI projects, presenting to 500+ AI
+professionals and receiving recognition in applied AI and health-tech innovation.
+• Hackathons: Collaborated in cross-functional teams across 15+ national and inter-college hackathons over 3+ years,
+shipping AI-powered solutions within 24–48 hour sprints.
+• Google Cloud Champion (2x): Completed 30+ skill badges to achieve 2x Champion status through Google Arcade,
+demonstrating continuous self-directed learning in cloud and AI technologies.
+• Oracle Cloud Infrastructure (OCI) Generative AI Professional Certification– View Certificate
+• Full Stack Web Development Virtual Internship Certificate– View Certificate
+• MongoDB Basics Certification– MongoDB University.
+https://github.com/Prince-74
+https://linkedin.com/in/prince-goyal-130631266

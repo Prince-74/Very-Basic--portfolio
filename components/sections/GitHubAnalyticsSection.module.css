@@ -1,0 +1,44 @@
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.stat {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.85rem;
+}
+
+.trophyWrap,
+.graphWrap,
+.snakeWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.trophy,
+.graph,
+.snake {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.85rem;
+}
+
+.snakeNote {
+  max-width: 640px;
+  margin: 0;
+  color: rgba(248, 239, 227, 0.5);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.snakeNote code {
+  color: #c4b5fd;
+  font-size: 0.78rem;
+}
